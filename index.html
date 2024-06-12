@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./main.css">
-</head>
-<body>
-<main>
-  <section>
-<div class="container">
- <h1 class="title">CRUD</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD Example</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>CRUD Example</h1>
 
-</div>
-  </section>
-</main>
-  <script src="./main.js"></script>
-</body>
+      <div id="create-section" class="crud-section">
+        <h2>Create</h2>
+        <input type="text" id="create-input" placeholder="Enter new data" />
+        <button id="create-button">Create</button>
+      </div>
+
+      <div id="read-section" class="crud-section">
+        <h2>Read</h2>
+        <button id="read-button">Fetch Data</button>
+        <ul id="data-list"></ul>
+      </div>
+
+      <div id="update-section" class="crud-section">
+        <h2>Update</h2>
+        <input type="text" id="update-id" placeholder="Enter ID to update" />
+        <input type="text" id="update-input" placeholder="Enter new data" />
+        <button id="update-button">Update</button>
+      </div>
+
+      <div id="delete-section" class="crud-section">
+        <h2>Delete</h2>
+        <input type="text" id="delete-id" placeholder="Enter ID to delete" />
+        <button id="delete-button">Delete</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
 </html>
